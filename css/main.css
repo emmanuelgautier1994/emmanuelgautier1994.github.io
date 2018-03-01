@@ -24,7 +24,7 @@ h1 {
 	justify-content: center;
 	align-content: center;
 	text-align:center;
-	background: #ededed;
+	/*background: #ededed;*/
 }
 
 #mdl-navigation__link {
@@ -32,7 +32,7 @@ h1 {
 	color: #242523;
 }
 
-.mdl-layout__content {
+.demo-layout-transparent {
 	height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -45,8 +45,4 @@ h1 {
     background: -ms-linear-gradient(to bottom, #ecefea, #ced3cc);
     background: -o-linear-gradient(to bottom, #ecefea, #ced3cc);
     background: linear-gradient(to bottom, #ecefea, #ced3cc);
-}
-
-#demo-layout-transparent {
-	background-color: #ededed;
 }

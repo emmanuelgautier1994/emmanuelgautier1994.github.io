@@ -1,3 +1,48 @@
-body {
-    background-color: lightblue;
+
+
+
+
+h1, h4, p {
+	font-family: 'Quicksand', sans-serif;
+	color: #242523;
+
+}
+
+h1 {
+	letter-spacing: 0.16em;
+	padding-top: 0px;
+	margin-top:0px;
+	padding-bottom: 0px;
+	margin-bottom:0px;
+}
+
+#logo_AF{
+
+}
+
+.mdl-cell {
+	justify-content: center;
+	align-content: center;
+	text-align:center;
+	background: #ededed;
+}
+
+.mdl-navigation__link {
+	font-family: 'Quicksand', sans-serif;
+	color: #242523;
+}
+
+.demo-layout-transparent {
+	height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #ced3cc;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient(to bottom, #ecefea, #ced3cc);
+    background: -moz-linear-gradient(to bottom, #ecefea, #ced3cc);
+    background: -ms-linear-gradient(to bottom, #ecefea, #ced3cc);
+    background: -o-linear-gradient(to bottom, #ecefea, #ced3cc);
+    background: linear-gradient(to bottom, #ecefea, #ced3cc);
 }

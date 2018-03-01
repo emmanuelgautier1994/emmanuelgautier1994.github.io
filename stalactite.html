@@ -1,44 +1,85 @@
+<!doctype html>
 
-<input type="file" id="input" onchange="handleFiles(this.files)" webkitdirectory>
-<script>
+<html lang="fr">
 
-function handleFiles(files) {
-  //console.log(files)
-  //console.log(files[0])
-  let file_reader = new FileReader()
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  file_reader.onload = function(event) {
-    console.log(event.currentTarget.result)
-  }
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
 
-  file_reader.readAsText(files[0])
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-  // file_reader.readAsArrayBuffer(files[0])
+  <title>archifiltre</title>
 
-  // file_reader.addEventListener('onload', function(a) {
-  //     console.log(a)
-  //   }, false)
-  // file_reader.onload = function(event) {
-  //   console.log(event.currentTarget.result)
-  // }
+  <link rel="stylesheet" href="css/main.css">
 
-  var treeString
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" type="text/css" href="sequences.css"/>
 
-  //treeString = "path,weight\n"
+ <!-- <link rel="icon" href="images/favicon.png"> -->
+</head>
 
-  var index
-  var filepath
+<body>
+  <!-- PAGE HEADER -->
 
-  for (index = 0; index < files.length; ++index) {
-    filepath = files[index].webkitRelativePath.replace(/-/g, '_').replace(/[\/\\]/g, '-')
-    treeString += filepath + "," + files[index].size + "\n"
-  }
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <p class="mdl-navigation__link" href=""><strong>Outils à tester |</strong></p>
+        <a class="mdl-navigation__link" href="stalactite.html">Stalactite</a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
 
-  console.log(treeString)
+    <div class="mdl-grid">
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-cell mdl-cell--8-col">
 
-  //console.log(file_reader)
 
 
-}
+        <input type="file" id="input" onchange="plot(files2CSV(this.files))" webkitdirectory>
 
-</script>
+        <div id="main">
+          <div id="sequence"></div>
+          <div id="chart"></div>
+        </div>
+        <div id="sidebar">
+          <input type="checkbox" id="togglelegend"> Legend<br/>
+          <div id="legend" style="visibility: hidden;"></div>
+        </div>
+
+        <script type="text/javascript" src="files2CSV.js"></script>
+        <script type="text/javascript" src="sequences.js"></script>
+
+
+
+      </div>
+      <div class="mdl-layout-spacer"></div>
+
+    </div>
+    <div class="mdl-grid">
+
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-cell mdl-cell--6-col"><p></p></div>
+      <div class="mdl-layout-spacer"></div>
+  </div>
+
+  </main>
+</div>
+        
+</body>
+
+</html>

@@ -1,12 +1,11 @@
 
 
-
-
-h1, h4, p {
+h1, h4, p, .mdl-layout__header-row .mdl-navigation__link {
 	font-family: 'Quicksand', sans-serif;
 	color: #242523;
-
 }
+
+
 
 h1 {
 	letter-spacing: 0.16em;
@@ -16,20 +15,11 @@ h1 {
 	margin-bottom:0px;
 }
 
-#logo_AF{
-
-}
 
 .mdl-cell {
 	justify-content: center;
 	align-content: center;
 	text-align:center;
-
-}
-
-#mdl-navigation__link {
-	font-family: 'Quicksand', sans-serif;
-	color: #242523;
 }
 
 .demo-layout-transparent {

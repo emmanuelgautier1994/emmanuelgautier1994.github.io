@@ -1,44 +1,21 @@
+<!doctype html>
+<html lang="fr">
 
-<input type="file" id="input" onchange="handleFiles(this.files)" webkitdirectory>
-<script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-function handleFiles(files) {
-  //console.log(files)
-  //console.log(files[0])
-  let file_reader = new FileReader()
+  <title></title>
 
-  file_reader.onload = function(event) {
-    console.log(event.currentTarget.result)
-  }
+  <link rel="stylesheet" href="css/main.css">
+ <!-- <link rel="icon" href="images/favicon.png"> -->
+</head>
 
-  file_reader.readAsText(files[0])
+<body>
 
-  // file_reader.readAsArrayBuffer(files[0])
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>-->
+</body>
 
-  // file_reader.addEventListener('onload', function(a) {
-  //     console.log(a)
-  //   }, false)
-  // file_reader.onload = function(event) {
-  //   console.log(event.currentTarget.result)
-  // }
-
-  var treeString
-
-  //treeString = "path,weight\n"
-
-  var index
-  var filepath
-
-  for (index = 0; index < files.length; ++index) {
-    filepath = files[index].webkitRelativePath.replace(/-/g, '_').replace(/[\/\\]/g, '-')
-    treeString += filepath + "," + files[index].size + "\n"
-  }
-
-  console.log(treeString)
-
-  //console.log(file_reader)
-
-
-}
-
-</script>
+</html>

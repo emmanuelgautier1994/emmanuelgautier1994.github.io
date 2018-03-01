@@ -27,12 +27,12 @@ h1 {
 	background: #ededed;
 }
 
-.mdl-navigation__link {
+#mdl-navigation__link {
 	font-family: 'Quicksand', sans-serif;
 	color: #242523;
 }
 
-.demo-layout-transparent {
+.mdl-layout__content {
 	height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -45,4 +45,8 @@ h1 {
     background: -ms-linear-gradient(to bottom, #ecefea, #ced3cc);
     background: -o-linear-gradient(to bottom, #ecefea, #ced3cc);
     background: linear-gradient(to bottom, #ecefea, #ced3cc);
+}
+
+#demo-layout-transparent {
+	background-color: #ededed;
 }

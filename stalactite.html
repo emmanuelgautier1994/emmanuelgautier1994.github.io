@@ -54,6 +54,17 @@
       <div class="mdl-layout-spacer"></div>
       <div class="mdl-cell mdl-cell--4-col">
 
+        <p>
+          Entrez le chemin du répertoire racine pour pouvoir ouvrir des répertoires en cliquant dessus :
+        </p>
+        
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input id="root_folder_path" class="mdl-textfield__input" type="text" id="sample3">
+          <label class="mdl-textfield__label" for="sample3">Chemin du dossier racine...</label>
+        </div>
+
+        <!--<input type="text" id="root_folder_path" placeholder="Root Folder Path">-->
+        <br /> 
         <input type="file" onchange="plot(files2CSV(this.files))" webkitdirectory>
 
       </div>

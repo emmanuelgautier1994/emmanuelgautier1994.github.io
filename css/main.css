@@ -5,7 +5,7 @@ h1, h4, p, .mdl-layout__header-row .mdl-navigation__link {
 	color: #242523;
 }
 
-.logo-af-titre{
+.logo-espace{
 	letter-spacing: 0.25em;
 	font-variant-ligatures: none;
 }
@@ -19,13 +19,18 @@ h1 {
 	margin-bottom:0px;
 }
 
+.jap{
+	font-family: "Sawarabi Mincho";
+	letter-spacing: 0.45em;
+}
+
 
 .mdl-cell {
 	justify-content: center;
 	align-content: center;
 	text-align:center;
-/*	background: #ededed;
-*/}
+	/*background: #ededed;*/
+}
 
 .demo-layout-transparent {
 	height: 100%;

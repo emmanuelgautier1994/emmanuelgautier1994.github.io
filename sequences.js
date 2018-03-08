@@ -17,13 +17,13 @@ function plot(csv_string) {
 
   // Mapping of step names to colors.
   var colors = {
-    folder : "#fabf0b",
-    spreadsheet : "#52d11a",
-    doc : "#1a55ea",
-    presentation : "#e33b14",
-    otherfiles : "#8a8c93",
+    répertoire : "#fabf0b",
+    tableur : "#52d11a",
+    document : "#1a55ea",
+    présentation : "#e33b14",
+    autres : "#8a8c93",
     email: "#13d6f3",
-    multimedia: "#9735f2"
+    multimédia: "#9735f2"
   };
 
   var font_size = 10
@@ -32,7 +32,7 @@ function plot(csv_string) {
   function colorOf(name, children) {
     
     if (children !== undefined) {
-      return colors.folder;
+      return colors.répertoire;
     } else {
       var m = name.match(/\..*$/)
 
@@ -50,7 +50,7 @@ function plot(csv_string) {
         case ".csv": // format CSV
         case ".ods": //formats OOo/LO Calc
         case ".ots":
-          return colors.spreadsheet;
+          return colors.tableur;
         case ".doc":  //formats Microsoft Word
         case ".docx":
         case ".docm":
@@ -61,7 +61,7 @@ function plot(csv_string) {
         case ".ott":
         case ".txt": // formats texte standard
         case ".rtf":
-          return colors.doc;
+          return colors.document;
         case ".ppt": // formats Microsoft PowerPoint
         case ".pptx":
         case ".pptm":
@@ -71,7 +71,7 @@ function plot(csv_string) {
         case ".odp": // formats OOo/LO Impress
         case ".otp":
         case ".pdf": // On considère le PDF comme une présentation
-          return colors.presentation;
+          return colors.présentation;
         case ".eml": //formats d'email et d'archive email
         case ".msg":
         case ".pst":
@@ -90,9 +90,9 @@ function plot(csv_string) {
         case ".mp4":
         case ".mov":
         case ".mkv":
-          return colors.multimedia;
+          return colors.multimédia;
         default:
-          return colors.otherfiles;
+          return colors.autres;
         }
 
       }

@@ -1,5 +1,4 @@
 body {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
@@ -11,7 +10,7 @@ body {
 
 #sidebar {
   float: right;
-  width: 6.25em;
+/*  width: 150em;*/
 }
 
 #sequence {

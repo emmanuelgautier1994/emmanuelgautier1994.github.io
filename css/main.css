@@ -1,6 +1,6 @@
 
 
-h1, h4, p, .mdl-layout__header-row .mdl-navigation__link {
+h1, h2, h3, h4, p, .mdl-layout__header-row .mdl-navigation__link {
 	font-family: 'Quicksand', sans-serif;
 	color: #242523;
 }
@@ -9,7 +9,6 @@ h1, h4, p, .mdl-layout__header-row .mdl-navigation__link {
 	letter-spacing: 0.25em;
 	font-variant-ligatures: none;
 }
-
 
 h1 {
 	letter-spacing: 0.16em;
@@ -24,6 +23,9 @@ h1 {
 	letter-spacing: 0.45em;
 }
 
+.mdl-layout-spacer{
+/*	background: #ffeded;
+*/}
 
 .mdl-cell {
 	justify-content: center;

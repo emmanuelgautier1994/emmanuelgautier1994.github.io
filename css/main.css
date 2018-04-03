@@ -1,9 +1,19 @@
 
 
-h1, h2, h3, h4, p, .mdl-layout__header-row .mdl-navigation__link {
+h1, h2, h3, h4, h5, p, .mdl-layout__header-row .mdl-navigation__link {
 	font-family: 'Quicksand', sans-serif;
 	color: #242523;
 }
+
+svg text{
+	font-family: 'Quicksand', sans-serif;
+}
+
+.legend-label {
+	/*font-weight: bold;*/
+	letter-spacing: 0.15em;
+}
+
 
 .logo-espace{
 	letter-spacing: 0.25em;
@@ -16,6 +26,20 @@ h1 {
 	margin-top:0px;
 	padding-bottom: 0px;
 	margin-bottom:0px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.frame{
+	white-space: nowrap;
+}
+
+.bonsai{
+	vertical-align: middle;
 }
 
 .jap{

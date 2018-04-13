@@ -22,7 +22,7 @@
 
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css" />
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
   <title>archifiltre</title>
@@ -33,58 +33,117 @@
 
 <body>
 
-  <!-- PAGE HEADER -->
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <!-- TITLE -->
-      <span class="mdl-layout-title">
-        <a class="logo-espace mdl-navigation__link" href="index.html"><strong>archifiltre</strong></a>
-      </span>
-
-      <div class="mdl-layout-spacer"></div>
-
-      <!-- NAVIGATION -->
-      <nav class="mdl-navigation">
-        <p class="mdl-navigation__link" href=""><strong>Outils à tester |</strong></p>
-        <a class="mdl-navigation__link" href="stalactite2.html">stalactite v2</a>
-        <a class="mdl-navigation__link" href="stalactite3.html">stalactite v3 (beta)</a>
-      </nav>
-    </div>
-  </header>
 
   <!-- CONTENT -->
   <main class="mdl-layout__content">
 
   	<div class="mdl-grid">
   		<div class="mdl-layout-spacer"></div>
-  		<div class="mdl-cell mdl-cell--8-col"><h1>archifiltre</h1><h4>Comment peut-on explorer un lot de données et aider les parties prenantes à l'appréhender, en vue de gagner de la place ?</h2></div>
-  		<div class="mdl-layout-spacer"></div>
+  		<div class="mdl-cell mdl-cell--8-col">
+        <h1>archifiltre</h1>
+        <h4>
+          Vos fichiers et dossiers, comme vous ne les avez jamais vus.
+        </h4>
+        <a href="https://archifiltre.io">
+          <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+             Découvrez l'application
+          </button>
+        </a>
 
-  	</div>
-  	<div class="mdl-grid">
+        <div style="text-align:center;">
+        </div>
+      </div>
+      <div class="mdl-layout-spacer"></div>
+    </div>
 
-  		<div class="mdl-layout-spacer"></div>
+    <div class="mdl-grid">
 
-  		<div class="frame mdl-cell mdl-cell--4-col">
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+
+      <div class="mdl-cell mdl-cell--6-col" style="text-align:left">
+        <h4>Besoin d'y voir clair ?</h4>
+        <p>Faire du tri dans un gros dossier n'est pas chose facile. Comment savoir combien de sous-dossiers se cachent dans "divers" ? Où trouver ce fichier de 5 Go que vous êtes sûrs d'avoir vu quelque part pour faire de la place ?</p>
+        <p>Avec <strong><a href="https://archifiltre.io">archifiltre</a></strong>, prenez de la hauteur. Appréhendez une arborescence en entier, d'un seul coup d'œil.</p>
+        <br />
+
+
+      </div>
+
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+
+      <div class="frame mdl-cell mdl-cell--4-col" style="padding:1em;">
+        <img src="imgs/folders.png" width="100%" style="max-width:350px;" />
+      </div>
+
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+     </div>
+
+    <div class="mdl-grid">
+
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+
+      <div class="frame mdl-cell mdl-cell--4-col">
         <span class="helper"></span>
         <img class="bonsai" src="imgs/bonsai.png" alt="bonsai" width="100%"/>
       </div>
 
-  		<div class="mdl-layout-spacer"></div>
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
 
-  		<div class="mdl-cell mdl-cell--6-col" style="text-align:left">
-  			<h4 class="logo-espace"><span class="jap">ヤマドリ</span> [ yamadori ]</h4>
-  			<p>Le <strong>yamadori</strong> est une pratique consistant à récolter un arbre nain dans la nature, à tailler ses branches et à l'entretenir afin d'en faire un bonsai.</p>
-  			<p><strong>archifiltre</strong> vous permet de faire la même chose avec une arborescence de fichiers. La prélever, l'examiner, et y faire du tri.</p>
-  		</div>
+      <div class="mdl-cell mdl-cell--6-col" style="text-align:left">
+        <h4>Le tri, mais zen.</h4>
+        <p>La pratique du <strong>yamadori <span class="jap">[ヤマドリ]</span></strong> consiste à récolter un arbre nain dans la nature, à tailler ses branches et à l'entretenir pour en faire un bonsai. <strong><a href="https://archifiltre.io">archifiltre</a></strong> vous permet la même chose avec une arborescence de fichiers. La prélever, l'examiner, et y faire du tri.</p>
 
-  		<div class="mdl-layout-spacer"></div>
-	</div>
+      </div>
 
+      <div class="mdl-layout-spacer mdl-layout--large-screen-only"></div>
+     </div>
+
+    <div width="100%" style="height: 15em; background: url('imgs/stock-folders.jpg') no-repeat center;">
+      <div width="100%" class="black-gradient">
+        <div width="100%" style="text-align: center; position: relative; top:20%; padding-left:1em; padding-right:1em;">
+          <h3 style="color: white; letter-spacing: 0.1em;">Changez de point de vue.</h3>
+          <a href="https://archifiltre.io">
+            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+               Découvrez l'application
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  <!-- FOOTER -->
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <div class="mdl-logo logo-espace">archifiltre</div>
+      <ul class="mdl-mini-footer__link-list">
+        <li><a href="https://twitter.com/archifiltre">Twitter</a></li>
+        <li><a href="https://github.com/jeanbaptisteassouad/cheapExp">GitHub</a></li>
+        <li><a href="https://entrepreneur-interet-general.etalab.gouv.fr/defi/2017/09/26/archemse/">EIG</a></li>
+      </ul>
+    </div>
+  </footer>
   </main>
 </div>
+
+
 
 </body>
 
 </html>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet" style="position:absolute;top: 50%; left: 50%; transform:translate(-50%,-50%);">
+          <g id="container">
+            <rect class="node" x="0" y="75" width="800" height="75" style="stroke: #fff; fill: rgb(250, 191, 11); opacity: 1;"></rect>
+            <rect class="node" x="793.0114461533169" y="150" width="6.356802869963184" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+            <rect class="node" x="587.6605588694292" y="150" width="115.82040913605607" height="75" style="stroke: #fff; fill: rgb(82, 209, 26); opacity: 1;"></rect>
+            <rect class="node" x="775.0867412238434" y="150" width="9.70884488396025" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+            <rect class="node" x="703.4809680054852" y="150" width="71.60577321835824" height="75" style="stroke: #fff; fill: rgb(82, 209, 26); opacity: 1;"></rect>
+            <rect class="node" x="432.98046861999717" y="150" width="154.68009024943208" height="75" style="stroke: #fff; fill: rgb(250, 191, 11); opacity: 1;"></rect>
+            <rect class="node" x="432.98046861999717" y="225" width="154.68009024943208" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+            <rect class="node" x="784.7955861078037" y="150" width="8.215860045513235" height="75" style="stroke: #fff; fill: rgb(247, 91, 64); opacity: 1;"></rect>
+            <rect class="node" x="0" y="150" width="432.98046861999717" height="75" style="stroke: #fff; fill: rgb(250, 191, 11); opacity: 1;"></rect>
+            <rect class="node" x="0" y="225" width="250" height="75" style="stroke: #fff; fill: rgb(247, 91, 64); opacity: 1;"></rect>
+            <rect class="node" x="250" y="225" width="100" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+            <rect class="node" x="350" y="225" width="50" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+            <rect class="node" x="400" y="225" width="15" height="75" style="stroke: #fff; fill: rgb(138, 140, 147); opacity: 1;"></rect>
+          </g></svg> -->

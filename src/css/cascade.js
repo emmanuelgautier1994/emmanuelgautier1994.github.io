@@ -33,7 +33,6 @@ export const white = make({
 })
 
 export const black_gradient = make({
-  // height:inherit;
   backgroundRepeat: 'no-repeat',
   background: '-webkit-linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.05))',
   background: '-moz-linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.05))',

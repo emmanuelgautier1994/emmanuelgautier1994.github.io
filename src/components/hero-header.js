@@ -2,7 +2,15 @@
 import React from 'react'
 import CTA from 'components/cta'
 
+import pick from 'languages'
+
 import { t_a_center, h1, h4 } from 'css/cascade'
+
+
+const sub_title_text = pick({
+  fr:'Vos fichiers et dossiers, comme vous ne les avez jamais vus.',
+  en:'Your files and folders, as you\'ve never seen them.'
+})
 
 
 const title_style = h1.add(t_a_center).style()
@@ -23,7 +31,7 @@ export default function(props) {
       </div>
       <div className='cell small-12'>
         <div style={sub_title_style}>
-          Vos fichiers et dossiers, comme vous ne les avez jamais vus.
+          {sub_title_text}
         </div>
       </div>
       <div className='cell small-12'>

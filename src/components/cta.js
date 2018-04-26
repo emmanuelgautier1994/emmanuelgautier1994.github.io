@@ -1,6 +1,12 @@
 
 import React from 'react'
 
+import pick from 'languages'
+
+const button_text = pick({
+  fr:'DÉCOUVREZ L\'APPLICATION',
+  en:'DISCOVER THE APPLICATION'
+})
 
 const button_style = {
   background: 'rgb(33, 150, 243)',
@@ -18,7 +24,7 @@ export default function(props) {
     <div className='grid-x'>
       <div className='cell'>
         <button style={button_style}>
-          DÉCOUVREZ L'APPLICATION
+          {button_text}
         </button>
       </div>
     </div>

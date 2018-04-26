@@ -2,7 +2,14 @@
 import React from 'react'
 import CTA from 'components/cta'
 
+import pick from 'languages'
+
 import { t_a_center, h3, white } from 'css/cascade'
+
+const title_text = pick({
+  fr:'Changez de point de vue.',
+  en:'Change your point of view.'
+})
 
 const grid_style = {
   padding: '2.5em'
@@ -23,7 +30,7 @@ export default function(props) {
     <div className='grid-x' style={grid_style}>
       <div className='cell small-12'>
         <div style={title_style}>
-          Changez de point de vue.
+          {title_text}
         </div>
       </div>
       <div className='cell small-12'>

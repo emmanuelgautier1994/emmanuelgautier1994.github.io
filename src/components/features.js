@@ -2,7 +2,67 @@
 import React from 'react'
 
 import make from 'css/make'
+import pick from 'languages'
+
 import { t_a_center, p, h4 } from 'css/cascade'
+
+
+const title1_text = pick({
+  fr:'Besoin d\'y voir clair dans une arborescence ?',
+  en:'Need to see clearly in a file tree?'
+})
+
+const para11_text = pick({
+  fr:
+    'Faire du tri dans un gros dossier est un vrai casse-tête.'+
+    'Comment savoir tout ce qui se cache dans "divers" ?'+
+    'Comment identifier rapidement les fichiers qui prennent le plus de place ?',
+  en:
+    'Sorting in a big folder is a real headache.'+
+    'How to know all that is hidden in "various"?'+
+    'How to quickly identify the files that take up the most space?'
+})
+
+const with_text = pick({
+  fr:'Avec ',
+  en:'With '
+})
+
+const para12_text = pick({
+  fr:', prenez de la hauteur. Appréhendez une arborescence en entier, d\'un seul coup d\'œil.',
+  en:', get high. Apprehend an entire tree at a glance.'
+})
+
+
+const title2_text = pick({
+  fr:'Le tri, mais zen.',
+  en:'Sorting, but zen.'
+})
+
+
+const practice_text = pick({
+  fr:'La pratique du ',
+  en:'The practice of '
+})
+
+const para21_text = pick({
+  fr:
+    ' consiste à récolter un arbre nain dans la nature,'+
+    ' à tailler ses branches et à l\'entretenir pour en faire un bonsai. ',
+  en:
+    ' is to harvest a dwarf tree in the wild,'+
+    ' prune its branches and maintain it for a bonsai. '
+})
+
+const para22_text = pick({
+  fr:
+    ' vous permet la même chose avec une arborescence de fichiers.'+
+    ' La prélever, l\'examiner, et y faire du tri.',
+  en:
+    ' allows you the same thing with a file tree.'+
+    ' Take it, examine it, and sort it.'
+})
+
 
 const padding = make({
   padding: '0em 1em',
@@ -27,13 +87,13 @@ export default function(props) {
         <div className='cell auto'></div>
         <div className='cell small-12 medium-6' style={cell_style}>
           <div style={title_style}>
-            Besoin d'y voir clair dans une arborescence ?
+            {title1_text}
           </div>
           <div style={para_style}>
-            Faire du tri dans un gros dossier est un vrai casse-tête. Comment savoir tout ce qui se cache dans "divers" ? Comment identifier rapidement les fichiers qui prennent le plus de place ?
+            {para11_text}
           </div>
           <div style={para_style}>
-            Avec <strong>archifiltre</strong>, prenez de la hauteur. Appréhendez une arborescence en entier, d'un seul coup d'œil.
+            {with_text}<strong>archifiltre</strong>{para12_text}
           </div>
         </div>
         <div className='cell auto'></div>
@@ -47,10 +107,10 @@ export default function(props) {
         <div className='cell auto medium-order-5'></div>
         <div className='cell small-12 medium-6 medium-order-4' style={cell_style}>
           <div style={title_style}>
-            Le tri, mais zen.
+            {title2_text}
           </div>
           <div style={para_style}>
-            La pratique du <strong>yamadori [ヤマドリ]</strong> consiste à récolter un arbre nain dans la nature, à tailler ses branches et à l'entretenir pour en faire un bonsai. <strong>archifiltre</strong> vous permet la même chose avec une arborescence de fichiers. La prélever, l'examiner, et y faire du tri.
+            {practice_text}<strong>yamadori [ヤマドリ]</strong>{para21_text}<strong>archifiltre</strong>{para22_text}
           </div>
         </div>
         <div className='cell auto medium-order-3'></div>
@@ -62,3 +122,4 @@ export default function(props) {
     </div>
   )
 }
+

@@ -4,8 +4,8 @@ import React from 'react'
 import pick from 'languages'
 
 const button_text = pick({
-  fr:'DÉCOUVREZ L\'APPLICATION',
-  en:'DISCOVER THE APPLICATION'
+  fr:<span>DÉCOUVREZ L'APPLICATION</span>,
+  en:<span>DISCOVER THE APPLICATION</span>
 })
 
 const button_style = {
@@ -16,7 +16,7 @@ const button_style = {
   letterSpacing: '0.1em',
   padding: '0.6em 1em',
   fontWeight: '500',
-  fontSize: '14px',
+  fontSize: '1em',
 }
 
 export default function(props) {

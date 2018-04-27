@@ -7,8 +7,8 @@ import pick from 'languages'
 import { t_a_center, h3, white } from 'css/cascade'
 
 const title_text = pick({
-  fr:'Changez de point de vue.',
-  en:'Change your point of view.'
+  fr:<span>Changez de point de vue.</span>,
+  en:<span>Change your point of view.</span>
 })
 
 const grid_style = {

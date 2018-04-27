@@ -8,8 +8,8 @@ import { t_a_center, h1, h4 } from 'css/cascade'
 
 
 const sub_title_text = pick({
-  fr:'Vos fichiers et dossiers, comme vous ne les avez jamais vus.',
-  en:'Your files and folders, as you\'ve never seen them.'
+  fr:<span>Vos fichiers et dossiers, comme vous ne les avez jamais vus.</span>,
+  en:<span>Your files and folders, as you've never seen them.</span>
 })
 
 

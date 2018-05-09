@@ -5,7 +5,7 @@ import pick from 'languages'
 
 const button_text = pick({
   fr:<span>DÉCOUVREZ L'APPLICATION</span>,
-  en:<span>DISCOVER THE APPLICATION</span>
+  en:<span>DISCOVER THE APP</span>
 })
 
 const button_style = {
@@ -23,9 +23,9 @@ export default function(props) {
   return (
     <div className='grid-x'>
       <div className='cell'>
-        <button style={button_style}>
-          {button_text}
-        </button>
+          <button style={button_style} onClick={() => window.location = 'https://archifiltre.io'}>
+            {button_text}
+          </button>
       </div>
     </div>
   )

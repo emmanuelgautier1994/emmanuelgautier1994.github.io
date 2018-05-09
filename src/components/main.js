@@ -3,6 +3,7 @@ import React from 'react'
 
 import HeroHeader from 'components/hero-header'
 import Features from 'components/features'
+import ChangeLog from 'components/changelog'
 import Recall from 'components/recall'
 import Footer from 'components/footer'
 
@@ -28,6 +29,9 @@ export default function(props) {
         </div>
         <div className='cell small-12'>
           <Features/>
+        </div>
+        <div className='cell small-12'>
+          <ChangeLog/>
         </div>
       </div>
 

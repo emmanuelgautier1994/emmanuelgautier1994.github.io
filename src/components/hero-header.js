@@ -21,6 +21,23 @@ const cta_style = t_a_center.add({
   padding: '0.5em'
 }).style()
 
+const version_text = pick({
+  fr:<span>version Elegant Elephant</span>,
+  en:<span>version Elegant Elephant</span>
+})
+
+const changelog_text = pick({
+  fr:<span>Quoi de neuf ?</span>,
+  en:<span>What's new?</span>
+})
+
+const changelog_link = "#changelog"
+
+const cta_subtitle_style = {
+  fontSize: '0.8em',
+  marginTop: '0.3em'
+}
+
 export default function(props) {
   return (
     <div className='grid-x'>
@@ -37,6 +54,9 @@ export default function(props) {
       <div className='cell small-12'>
         <div style={cta_style}>
           <CTA/>
+          <span style={cta_subtitle_style}>
+            {version_text} · <a href={changelog_link}>{changelog_text}</a>
+          </span>
         </div>
       </div>
     </div>

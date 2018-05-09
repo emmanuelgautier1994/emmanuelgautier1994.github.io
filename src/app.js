@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -13,8 +11,7 @@ const app = () => {
     document.body.appendChild(root_div)
   }
 
-  ReactDOM.render(<Main/>,root_div)
+  ReactDOM.render(<Main />,root_div)
 }
 
 window.onload = app
-

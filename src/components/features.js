@@ -9,7 +9,7 @@ import { t_a_center, p, h4 } from 'css/cascade'
 
 const title1_text = pick({
   fr:<span>Besoin d'y voir clair dans une arborescence ?</span>,
-  en:<span>Need to see clearly in a file tree?</span>
+  en:<span>Looking for clarity in a file tree?</span>
 })
 
 const para11_text = pick({
@@ -21,9 +21,9 @@ const para11_text = pick({
     </span>,
   en:
     <span>
-      Sorting in a big folder is a real headache.
-      How to know all that is hidden in "various"?
-      How to quickly identify the files that take up the most space?
+      Sorting a large folder can be a real pain.
+      How do you tell what's in "misc"?
+      How do quickly figure out which files take up the most space?
     </span>
 })
 
@@ -35,8 +35,8 @@ const para12_text = pick({
     </span>,
   en:
     <span>
-      With <strong>archifiltre</strong>, get high.
-      Apprehend an entire tree at a glance.
+      With <strong>archifiltre</strong>, get the full picture.
+      Make out an entire file tree, all in one glance.
     </span>
 })
 
@@ -50,8 +50,8 @@ const title2_text = pick({
 const para2_text = pick({
   fr:
     <span>
-      La pratique du <strong>yamadori [ヤマドリ]</strong>
-      consiste à récolter un arbre nain dans la nature,
+      La pratique du <strong>yamadori [ヤマドリ]</strong> consiste
+      à récolter un arbre nain dans la nature,
       à tailler ses branches et à l'entretenir pour en faire un
       bonsai. <strong>archifiltre</strong> vous permet
       la même chose avec une arborescence de fichiers.
@@ -59,11 +59,11 @@ const para2_text = pick({
     </span>,
   en:
     <span>
-      The practice of <strong>yamadori [ヤマドリ]</strong>
-      is to harvest a dwarf tree in the wild,
-      prune its branches and maintain it for a
+      The practice of <strong>yamadori [ヤマドリ]</strong> consists
+      in harvesting a dwarf tree in the wild,
+      pruning its branches and pampering it into a
       bonsai. <strong>archifiltre</strong> allows you
-      the same thing with a file tree.
+      to do the exact same thing, with a file tree.
       Take it, examine it, and sort it.
     </span>
 })

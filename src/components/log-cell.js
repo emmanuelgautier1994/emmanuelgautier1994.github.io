@@ -11,6 +11,7 @@ const cell_style = {
   padding: '1em 2em 1em 2em',
   margin: "3em 2em 3em 2em",
   fontSize: '0.9em',
+  minHeight: '10em',
   fontFamily: "'Quicksand', sans-serif"
 }
 

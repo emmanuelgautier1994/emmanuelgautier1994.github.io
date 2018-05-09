@@ -6,7 +6,7 @@ import make from 'css/make'
 import { white } from 'css/cascade'
 
 const grid_style = {
-  height: '5.5em'
+  height: '3em'
 }
 
 

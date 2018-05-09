@@ -10,8 +10,12 @@ import Footer from 'components/footer'
 import { black_gradient } from 'css/cascade'
 
 
-const image_back_style = {
+const folders_back_style = {
   background: 'url("imgs/stock-folders.jpg") no-repeat center'
+}
+
+const triangles_back_style = {
+  background: '#626982'
 }
 
 const grey_back_style = {
@@ -30,13 +34,10 @@ export default function(props) {
         <div className='cell small-12'>
           <Features/>
         </div>
-        <div className='cell small-12'>
-          <ChangeLog/>
-        </div>
       </div>
 
       <div className='grid-x'>
-        <div className='cell' style={image_back_style}>
+        <div className='cell' style={folders_back_style}>
           <div style={bg_style}>
             <div className='grid-x grid-padding-x grid-padding-y'>
               <div className='cell'>
@@ -44,6 +45,12 @@ export default function(props) {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className='grid-x grid-padding-x grid-padding-y'>
+        <div className='cell'>
+          <ChangeLog/>
         </div>
       </div>
 

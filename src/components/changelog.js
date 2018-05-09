@@ -9,11 +9,12 @@ import { t_a_center, p, h4 } from 'css/cascade'
 import Slider from "react-slick"
 import LogCell from "components/log-cell"
 
-const font_style = {
-  fontFamily: "'Quicksand', sans-serif"
+const title_style_base = {
+  fontFamily: "'Quicksand', sans-serif",
+  margin: '0'
 }
 
-const title_style = t_a_center.add(make(font_style)).style()
+const title_style = t_a_center.add(make(title_style_base)).style()
 const title_text = pick({
   fr: "Quoi de neuf ?",
   en: "What's new?"
@@ -26,25 +27,59 @@ const padding = make({
 const cell_style = padding.style()
 
 const root_style = {
-  padding: '0em 2em 5em 2em',
+  padding: '3em 2em 5em 2em',
   fontFamily: "'Quicksand', sans-serif"
 }
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{display: "block", transform: " scale(2) translate(-80%,0)"}}
+      onClick={onClick}
+    />
+  );
+}
+
+const SampleNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{display: "block", transform: " scale(2) translate(80%,0)"}}
+      onClick={onClick}
+    />
+  );
+}
+
+
 
 const settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  centerMode: true,
+  // centerMode: true,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  nextArrow: <SampleNextArrow />,
+  prevArrow: <SamplePrevArrow />,
 };
+
+const v5_desc_fr = (
+<span>Coucou<br />Hello<br />Salut<br />Ça va ?</span>
+);
+
+const v5_desc_en = (
+<span>Coucou<br />Hello<br />Salut<br />Ça va ?</span>
+);
 
 export default function(props) {
   return (
     <div style={root_style} id="changelog">
       <div className='grid-x grid-padding-y align-middle'>
         <div className='cell auto'></div>
-        <div className='cell small-12 medium-12' style={cell_style}>
+        <div className='cell small-10 medium-10' style={cell_style}>
           <h3 style={title_style}>{title_text}</h3>
           <Slider {...settings}>
             <LogCell
@@ -57,18 +92,18 @@ export default function(props) {
               en: "May 10 2018"
             })}
             content={pick({
-              fr: "Nous avons complètement reconstruit le moteur de l'application !",
-              en: "We rebuilt the app's engine from the ground up!"
+              fr: v5_desc_fr,
+              en: v5_desc_en
             })
             } />
             <LogCell
             version={pick({
-              fr: "v4 Elegant Elephant",
-              en: "v4 Elegant Elephant"
+              fr: "v4 Demanding Dolphin",
+              en: "v4 Demanding Dolphin"
             })}
             date={pick({
-              fr: "10 Mai 2018",
-              en: "May 10 2018"
+              fr: "12 Avril 2018",
+              en: "April 12 2018"
             })}
             content={pick({
               fr: "Le fil d'Ariane se trouve maintenant à droite",
@@ -77,12 +112,12 @@ export default function(props) {
             } />
             <LogCell
             version={pick({
-              fr: "v3 Elegant Elephant",
-              en: "v3 Elegant Elephant"
+              fr: "v3 Cheeky Cheetah",
+              en: "v3 Cheeky Cheetah"
             })}
             date={pick({
-              fr: "10 Mai 2018",
-              en: "May 10 2018"
+              fr: "21 Mars 2018",
+              en: "March 21 2018"
             })}
             content={pick({
               fr:"Vous pouvez maintenant zoomer",
@@ -91,12 +126,12 @@ export default function(props) {
             } />
             <LogCell
             version={pick({
-              fr: "v2 Elegant Elephant",
-              en: "v2 Elegant Elephant"
+              fr: "v2 Bonkers Bumblebee",
+              en: "v2 Bonkers Bumblebee"
             })}
             date={pick({
-              fr: "10 Mai 2018",
-              en: "May 10 2018"
+              fr: "2 Mars 2018",
+              en: "March 2 2018"
             })}
             content={pick({
               fr: "Quelques améliorations",
@@ -105,12 +140,12 @@ export default function(props) {
             } />
             <LogCell
             version={pick({
-              fr: "v1 Elegant Elephant",
-              en: "v1 Elegant Elephant"
+              fr: "v1 Abstract Antilope",
+              en: "v1 Abstract Antilope"
             })}
             date={pick({
-              fr: "10 Mai 2018",
-              en: "May 10 2018"
+              fr: "15 Février 2018",
+              en: "February 15 2018"
             })}
             content={pick({
               fr:"La première version d'archifiltre est en ligne ! Vous pouvez visualiser une arborescence d'un coup d'oeil !",

@@ -10,7 +10,7 @@ const cell_style = {
   borderRadius: '2em',
   padding: '1em 2em 1em 2em',
   margin: "3em 2em 3em 2em",
-  fontSize: '0.9em',
+  fontSize: '0.8em',
   minHeight: '10em',
   fontFamily: "'Quicksand', sans-serif"
 }

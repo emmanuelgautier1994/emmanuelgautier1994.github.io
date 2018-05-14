@@ -21,7 +21,7 @@ const title_text = pick({
 })
 
 const padding = make({
-  padding: '0em 1em',
+  padding: '0em 2.5em',
 })
 
 const cell_style = padding.style()
@@ -67,11 +67,48 @@ const settings = {
 };
 
 const v5_desc_fr = (
-<span>Coucou<br />Hello<br />Salut<br />Ça va ?</span>
+<span>
+  C'est notre deuxième grande version publique, et nous l'avons <em>blindée</em> de nouveautés !<br />
+  Fer de lance de cette mouture, <b>le tableau de bord</b> ! Au-dessus des stalactites, une zone vous donne la fiche d'identité 
+  du fichier ou répertoire actif. Dessus, vous pouvez <b>renommer</b>, <b>commenter</b> ou <b>taguer</b> l'élement.
+  À l'avenir, ça va devenir central pour Archifiltre : soyez prêt.e.s !<br />
+  Ce fut très demandé, <b>l'application est désormais accessible hors ligne</b> ! Du moment que vous y avez accédé une fois en étant 
+  connecté.e à Internet, revenez à la même adresse sans avoir Internet, et elle se chargera quand même.<br />
+  Plus de mauvaises surprises : si vous essayez de quitter la page, une <b>fenêtre de confirmation</b> vous retiendra, juste au cas où !<br />
+  Un regret ? Vous pouvez maintenant revenir sur vos pas, soit avec les boutons fléchés, soit avec
+  le <b>raccourci Ctrl+Z</b> !<br /><br />
+  En vrac, quelques <b>améliorations de l'interface</b> :<br /><ul>
+  <li>Pour être plus à l'aise avec le tableau de bord, cliquez une fois sur un rectangle pour le verrouiller.
+  Pour zoomer dessus, il faudra désormais double-cliquer. Cliquez en dehors des stalactites pour déverrouiller.<br /></li>
+  <li>Le retour à la racine est maintenant un bouton plutôt que du simple texte.<br /></li>
+  <li>Une chouette animation vous distrait pendant les longs imports !<br /></li>
+  <li>On nous a dit que le nom des fichiers et répertoires directement sur les rectangles était perturbant : c'est fini !<br /></li></ul>
+  Enfin, ça se voit moins à l'extérieur, mais il y a <b>de très gros changements sous le capot</b> ! Pour les curieux, on a réécrit un module fait avec D3.js, 
+  pour que notre application fonctionne entièrement avec React ; d'autre part, comme framework CSS, on est passés de Material Design Lite à Foundation.
+  Il se peut que les performances de l'application soient un poil moins bonnes qu'avant sur certains gros répertoires, mais pas d'inquiétude, on 
+  y travaille d'arrache-pied !<br />
+</span>
 );
 
 const v5_desc_en = (
-<span>Coucou<br />Hello<br />Salut<br />Ça va ?</span>
+<span>
+  Here comes our second major public release, and it is <em>stufed</em> with novelties!<br />
+  The spearhead of which, <b>the dashboard</b>! Above the icicles, you'll notice a report card about the active file or folder. On it,
+  you can <b>rename</b>, <b>comment</b> or <b>tag</b> the element. Brace yourselves: this will become central to Archifiltre in the future!<br />
+  This one was veyr requested: <b>the app now works offline</b>! As long as you've visited the page once while online, you can come back anytime, including
+  while offline, and the app will still load and work as usual!<br />
+  No more bad surprises: if you try to leave the page, you will get a <b>confirmation dialog</b>, just in case.<br />
+  Any regrets? You can now take anything back, using either the arrow buttons or the <b>Ctrl+Z</b> shortcut!<br /><br />
+  Some stray <b>UI improvements</b>:<br /><ul>
+  <li>For a better dashboard experience, click a rectangle once to lock it.
+  Zooming into it will now require a double click. Click outside the icicles to unlock.</li>
+  <li>"Back to root" is now a button rather than mere text.</li>
+  <li>A nifty animation will now distract while you're waiting for large folders to import!</li>
+  <li>We were told that sticking names right on the rectangles was confusing, so that's gone!</li></ul>
+  Last, but not least, there are <b>huge changes under the hood</b>! If anyone's curious, we re-wrote a D3.js module to make the app work using only React, and
+  changed CSS frameworks from Material Design Lite to Foundation. Performance coudl be a tiny bit inferior on some large folders, but don't worry, we're working
+  hard on this!
+</span>
 );
 
 const v4_desc_fr = (
@@ -143,8 +180,7 @@ export default function(props) {
   return (
     <div style={root_style} id="changelog">
       <div className='grid-x grid-padding-y align-middle'>
-        <div className='cell auto'></div>
-        <div className='cell small-10 medium-10' style={cell_style}>
+        <div className='cell small-12 medium-12' style={cell_style}>
           <h3 style={title_style}>{title_text}</h3>
           <Slider {...settings}>
             <LogCell
@@ -219,7 +255,6 @@ export default function(props) {
             } />
           </Slider>
         </div>
-        <div className='cell auto'></div>
       </div>
     </div>
   )

@@ -74,6 +74,71 @@ const v5_desc_en = (
 <span>Coucou<br />Hello<br />Salut<br />Ça va ?</span>
 );
 
+const v4_desc_fr = (
+<span>
+  Nouvelle version, <b>nouveau look</b> ! Déjà, l'application se met aux jolies couleurs de notre site web. C'est plus zen, plus bonsai. 
+  Ensuite, et ça rend les choses plus claires, <b>le fil d'Ariane</b> déménage en regard des stalactites. Un niveau dans les stalactites = un 
+  niveau dans le fil d'Ariane ! Enfin, la taille des fichiers ou répertoires est maintenant lisible à la verticale, sur une <b>réglette</b>, en bas des 
+  stalactites.
+</span>
+);
+
+const v4_desc_en = (
+<span>
+  New version, <b>new looks</b>! First, the app is now styled in the slick colors from our website. More zen, more bonsai.
+  Then, <b>the breadcrumbs</b> have moved right next to the icicles. How neat is that? One level down the icicles = one level down 
+  the breadcrumbs! Finally, you can now read a file or folder's size directly below the icicle, on a brand-new <b>ruler</b>!
+</span>
+);
+
+const v3_desc_fr = (
+<span>
+  Prenez un nouveau départ : un <b>bouton Réinitialiser</b> vous permet de vous lancer dans une nouvelle partie de tri !<br />
+  Des déboires lors de l'import ? Un <b>bouton Exporter les erreurs</b> sera là pour les détailler.
+  N'hésitez pas à <a href="mailto:archifiltre@gmail.com">nous l'envoyer</a> !<br />
+  Les anglophones sont désormais les bienvenus : <b>l'application a été traduite en anglais</b>, et la langue est détectée automatiquement.<br />
+  Enfin, quelques <b>améliorations pour l'interface</b> : ces transitions agaçantes quand votre souris quitte les stalactites ont disparu,
+   et l'application s'adapte un peu mieux à la taille de votre écran.
+</span>
+);
+
+const v3_desc_en = (
+<span>
+  Re-start from scratch : you can now start a new sorting session with the <b>Reinit button</b>!<br />
+  Any trouble during upload? An <b>Export errors button</b> will show up to provide details.
+  Feel free to <a href="mailto:archifiltre@gmail.com">send it to us</a>!<br />
+  English speakers, welcome! <b>The app has been translated to English</b>, and your language will be automatically detected.<br />
+  Finally, some <b>UI enhancements</b>: these annoying transitions when your mouse leaves the icicles are gone, and the app 
+  will better fit to your screen size.
+</span>
+);
+
+const v2_desc_fr = (
+<span>
+  Allez au coeur de vos arborescences : vous pouvez maintenant <b>zoomer sur un sous-répertoire</b> en cliquant dessus !<br />
+  Un chargement un peu long ? Au moins, vous ne serez plus perdu.e : <b>un écran de chargement</b> vous indique l'avancement des opérations.<br />
+  Sauvegardez votre travail, et reprenez-le plus tard : en cliquant sur le <b>bouton Exporter</b>, vous obtenez un fichier de sauvegarde.
+  La prochaine fois, déposez celui-ci plutôt que votre arborescence, et le chargement sera bien plus rapide !
+</span>
+);
+
+const v2_desc_en = (
+<span>
+  Get to the bottom of things: you can now <b>zoom into a subfolder</b> by clicking it!<br />
+  Waiting for a long upload? You won't get lost anymore: <b>the new loading screen</b> will update you on the progress.<br />
+  Save your work, pick it up later: when you click the <b>Export button</b>, you get a save of your work. Next time around,
+  upload that file, rather than you file tree; you'll pick up where you left off with next to no loading time!
+</span>
+);
+
+const v1_desc_fr = (
+<span>La première version d'archifiltre est en ligne !<br />Vous pouvez visualiser une arborescence en un seul coup d'oeil !</span>
+);
+
+const v1_desc_en = (
+<span>Archifiltre's first version is now live! Visualize a file tree at a signle glance!</span>
+);
+
 export default function(props) {
   return (
     <div style={root_style} id="changelog">
@@ -88,8 +153,8 @@ export default function(props) {
               en: "v5 Elegant Elephant"
             })}
             date={pick({
-              fr: "10 Mai 2018",
-              en: "May 10 2018"
+              fr: "15 Mai 2018",
+              en: "May 15 2018"
             })}
             content={pick({
               fr: v5_desc_fr,
@@ -102,12 +167,12 @@ export default function(props) {
               en: "v4 Demanding Dolphin"
             })}
             date={pick({
-              fr: "12 Avril 2018",
-              en: "April 12 2018"
+              fr: "14 Avril 2018",
+              en: "April 14 2018"
             })}
             content={pick({
-              fr: "Le fil d'Ariane se trouve maintenant à droite",
-              en: "The breadcrumbs are now to the right"
+              fr: v4_desc_fr,
+              en: v4_desc_en
             })
             } />
             <LogCell
@@ -116,12 +181,12 @@ export default function(props) {
               en: "v3 Cheeky Cheetah"
             })}
             date={pick({
-              fr: "21 Mars 2018",
-              en: "March 21 2018"
+              fr: "28 Mars 2018",
+              en: "March 28 2018"
             })}
             content={pick({
-              fr:"Vous pouvez maintenant zoomer",
-              en:"You can zoom"
+              fr: v3_desc_fr,
+              en: v3_desc_en
             })
             } />
             <LogCell
@@ -130,12 +195,12 @@ export default function(props) {
               en: "v2 Bonkers Bumblebee"
             })}
             date={pick({
-              fr: "2 Mars 2018",
-              en: "March 2 2018"
+              fr: "15 Mars 2018",
+              en: "March 15 2018"
             })}
             content={pick({
-              fr: "Quelques améliorations",
-              en: "Some improvements"
+              fr: v2_desc_fr,
+              en: v2_desc_en
             })
             } />
             <LogCell
@@ -144,12 +209,12 @@ export default function(props) {
               en: "v1 Abstract Antilope"
             })}
             date={pick({
-              fr: "15 Février 2018",
-              en: "February 15 2018"
+              fr: "1er Mars 2018",
+              en: "March 1 2018"
             })}
             content={pick({
-              fr:"La première version d'archifiltre est en ligne ! Vous pouvez visualiser une arborescence d'un coup d'oeil !",
-              en:"Archifiltre's first version is now live! You can visualize a file tree at a single glance!"
+              fr: v1_desc_fr,
+              en: v1_desc_en
             })
             } />
           </Slider>

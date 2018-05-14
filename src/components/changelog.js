@@ -195,8 +195,9 @@ export default function(props) {
             content={pick({
               fr: v5_desc_fr,
               en: v5_desc_en
-            })
-            } />
+            })}
+            isCurrent={true}
+            />
             <LogCell
             version={pick({
               fr: "v4 Demanding Dolphin",
@@ -209,8 +210,9 @@ export default function(props) {
             content={pick({
               fr: v4_desc_fr,
               en: v4_desc_en
-            })
-            } />
+            })}
+            isCurrent={false}
+            />
             <LogCell
             version={pick({
               fr: "v3 Cheeky Cheetah",
@@ -223,8 +225,9 @@ export default function(props) {
             content={pick({
               fr: v3_desc_fr,
               en: v3_desc_en
-            })
-            } />
+            })}
+            isCurrent={false}
+            />
             <LogCell
             version={pick({
               fr: "v2 Bonkers Bumblebee",
@@ -237,8 +240,9 @@ export default function(props) {
             content={pick({
               fr: v2_desc_fr,
               en: v2_desc_en
-            })
-            } />
+            })}
+            isCurrent={false}
+            />
             <LogCell
             version={pick({
               fr: "v1 Abstract Antilope",
@@ -251,8 +255,9 @@ export default function(props) {
             content={pick({
               fr: v1_desc_fr,
               en: v1_desc_en
-            })
-            } />
+            })}
+            isCurrent={false}
+            />
           </Slider>
         </div>
       </div>

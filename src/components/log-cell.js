@@ -15,10 +15,19 @@ const cell_style = {
   fontFamily: "'Quicksand', sans-serif"
 }
 
+const current_version_text = pick({
+  fr: "Version actuelle",
+  en: "Current version"
+})
+
+const current_version = (<span style={{color: '#08c37d'}}>• {current_version_text}</span>);
+
 export default function(props) {
+  let version = (props.isCurrent ? current_version : (<span></span>));
+
   return (
     <div style={cell_style}>
-      <span style={{fontSize:'1.5em'}}><strong>{props.version}</strong> - {props.date}</span>
+      <span style={{fontSize:'1.5em'}}><strong>{props.version}</strong> - {props.date} {version}</span>
       <br />
       <span>{props.content}</span>
     </div>

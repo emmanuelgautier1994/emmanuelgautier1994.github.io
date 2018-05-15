@@ -95,7 +95,7 @@ const v5_desc_en = (
   Here comes our second major public release, and it is <em>stufed</em> with novelties!<br />
   The spearhead of which, <b>the dashboard</b>! Above the icicles, you'll notice a report card about the active file or folder. On it,
   you can <b>rename</b>, <b>comment</b> or <b>tag</b> the element. Brace yourselves: this will become central to Archifiltre in the future!<br />
-  This one was veyr requested: <b>the app now works offline</b>! As long as you've visited the page once while online, you can come back anytime, including
+  This one was requested a lot: <b>the app now works offline</b>! As long as you've visited the page once while online, you can come back anytime, including
   while offline, and the app will still load and work as usual!<br />
   No more bad surprises: if you try to leave the page, you will get a <b>confirmation dialog</b>, just in case.<br />
   Any regrets? You can now take anything back, using either the arrow buttons or the <b>Ctrl+Z</b> shortcut!<br /><br />
@@ -106,7 +106,7 @@ const v5_desc_en = (
   <li>A nifty animation will now distract while you're waiting for large folders to import!</li>
   <li>We were told that sticking names right on the rectangles was confusing, so that's gone!</li></ul>
   Last, but not least, there are <b>huge changes under the hood</b>! If anyone's curious, we re-wrote a D3.js module to make the app work using only React, and
-  changed CSS frameworks from Material Design Lite to Foundation. Performance coudl be a tiny bit inferior on some large folders, but don't worry, we're working
+  changed CSS frameworks from Material Design Lite to Foundation. Performance could be a tiny bit inferior on some large folders, but don't worry, we're working
   hard on this!
 </span>
 );
@@ -185,21 +185,6 @@ export default function(props) {
           <Slider {...settings}>
             <LogCell
             version={pick({
-              fr: "v5 Elegant Elephant",
-              en: "v5 Elegant Elephant"
-            })}
-            date={pick({
-              fr: "15 Mai 2018",
-              en: "May 15 2018"
-            })}
-            content={pick({
-              fr: v5_desc_fr,
-              en: v5_desc_en
-            })}
-            isCurrent={true}
-            />
-            <LogCell
-            version={pick({
               fr: "v4 Demanding Dolphin",
               en: "v4 Demanding Dolphin"
             })}
@@ -211,7 +196,7 @@ export default function(props) {
               fr: v4_desc_fr,
               en: v4_desc_en
             })}
-            isCurrent={false}
+            isCurrent={true}
             />
             <LogCell
             version={pick({
@@ -249,12 +234,27 @@ export default function(props) {
               en: "v1 Abstract Antilope"
             })}
             date={pick({
-              fr: "1er Mars 2018",
-              en: "March 1 2018"
+              fr: "2 Mars 2018",
+              en: "March 2 2018"
             })}
             content={pick({
               fr: v1_desc_fr,
               en: v1_desc_en
+            })}
+            isCurrent={false}
+            />
+            <LogCell
+            version={pick({
+              fr: "v5 Elegant Elephant",
+              en: "v5 Elegant Elephant"
+            })}
+            date={pick({
+              fr: "15 Mai 2018",
+              en: "May 15 2018"
+            })}
+            content={pick({
+              fr: v5_desc_fr,
+              en: v5_desc_en
             })}
             isCurrent={false}
             />

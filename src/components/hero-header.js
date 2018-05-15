@@ -22,8 +22,8 @@ const cta_style = t_a_center.add({
 }).style()
 
 const version_text = pick({
-  fr:<span>version Elegant Elephant</span>,
-  en:<span>version Elegant Elephant</span>
+  fr:<span>version 4 Demanding Dolphin</span>,
+  en:<span>version 4 Demanding Dolphin</span>
 })
 
 const changelog_text = pick({

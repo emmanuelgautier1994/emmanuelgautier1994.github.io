@@ -185,6 +185,21 @@ export default function(props) {
           <Slider {...settings}>
             <LogCell
             version={pick({
+              fr: "v5 Elegant Elephant",
+              en: "v5 Elegant Elephant"
+            })}
+            date={pick({
+              fr: "16 Mai 2018",
+              en: "May 16 2018"
+            })}
+            content={pick({
+              fr: v5_desc_fr,
+              en: v5_desc_en
+            })}
+            isCurrent={true}
+            />
+            <LogCell
+            version={pick({
               fr: "v4 Demanding Dolphin",
               en: "v4 Demanding Dolphin"
             })}
@@ -196,7 +211,7 @@ export default function(props) {
               fr: v4_desc_fr,
               en: v4_desc_en
             })}
-            isCurrent={true}
+            isCurrent={false}
             />
             <LogCell
             version={pick({
@@ -240,21 +255,6 @@ export default function(props) {
             content={pick({
               fr: v1_desc_fr,
               en: v1_desc_en
-            })}
-            isCurrent={false}
-            />
-            <LogCell
-            version={pick({
-              fr: "v5 Elegant Elephant",
-              en: "v5 Elegant Elephant"
-            })}
-            date={pick({
-              fr: "15 Mai 2018",
-              en: "May 15 2018"
-            })}
-            content={pick({
-              fr: v5_desc_fr,
-              en: v5_desc_en
             })}
             isCurrent={false}
             />

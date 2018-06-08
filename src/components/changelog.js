@@ -66,6 +66,37 @@ const settings = {
   prevArrow: <SamplePrevArrow />,
 };
 
+const v6_desc_fr = (
+  <span>
+    Une nouvelle version, une nouvelle ribambelle d'améliorations !<br /><br />
+    Aujourd'hui, ce sont <b>les dates</b> qui sont à l'honneur, puisqu'elles s'affichent maintenant avec une foultitude de précisions. 
+    Passez la souris sur un répertoire, et vous verrez, dans sa fiche, quelles sont les dates de modification minimale, maximale, moyenne 
+    et médiane de tous les fichiers qu'il contient ! Vous pouvez aller encore plus loin, et choisir <b>le mode de vue "Dates"</b>, dans la barre 
+    de navigation : vos dossiers et fichiers se colorent en fonction de leur date de modification.<br /><br />
+    Ce sont ensuite <b>les tags</b> qui bénéficient d'un beau renouveau : vous voyez maintenant, à leur liseré bleu, quels dossiers et fichiers 
+    sont tagués, et un panneau à droite vous liste tous les tags que vous avez utilisés. Passez votre souris dessus pour voir qui est tagué comment !<br /><br />
+    Enfin, nous nous sommes démenés pour vous rendre ArchiFiltre encore plus confortable ! Déjà, il devrait être <b>beaucoup plus rapide </b>
+    à l'utilisation - tant mieux si vous aimez visualiser de grandes arborescences. Plus visible encore : nous avons repensé l'interface ! Elle devrait 
+    être <b>plus claire</b>, <b>plus agréable</b> à utiliser (remarquez les jolis halos, ils vous indiquent les zones que vous pouvez modifier en cliquant dessus), 
+    et aussi <b>plus compacte</b>, parce que c'est mieux quand les stalactites tiennent en entier dans votre fenêtre.
+  </span>
+);
+
+const v6_desc_en = (
+  <span>
+    Another update, another large chunk of improvements!<br /><br />
+    Starring v6, are <b>dates</b>, seen as they are displayed with a great deal of precision! Hover over a folder, and you'll see its minimum, maximum,
+    average and median modification dates, displayed on its report card. Take it a step further, and select the new "Dates" viewmode to re-paint your 
+    files and folders based on their modification date.<br /><br />
+    <b>Tags</b> also get a fantastic makeover: you can now tell which files and folders have tags, from their upper blue stroke. Also, a panel on 
+    the right lists all the tags you've written. Hover over it to see who's tagged with what!<br /><br />
+    Finally, we've bust our butts to make ArchiFiltre an even smoother experience! First, the app should now be much <b>faster</b>, which will definitely
+    be a plus for the large-file-tree lovers out there. Over the hood, we re-built the interface! It should be <b>easier and more enjoyable to use </b>
+    - notice the grey glow around some elements? They tell you when you can modify something by clicking it -, and also <b>more compact</b>, because it's 
+    always a good thing when the entire app fits in your screen.
+  </span>
+);
+
 const v5_desc_fr = (
 <span>
   C'est notre deuxième grande version publique, et nous l'avons <em>blindée</em> de nouveautés !<br />
@@ -185,6 +216,21 @@ export default function(props) {
           <Slider {...settings}>
             <LogCell
             version={pick({
+              fr: "v6 Frolic Fox",
+              en: "v6 Frolic Fox"
+            })}
+            date={pick({
+              fr: "8 juin 2018",
+              en: "June 8 2018"
+            })}
+            content={pick({
+              fr: v6_desc_fr,
+              en: v6_desc_en
+            })}
+            isCurrent={true}
+            />
+            <LogCell
+            version={pick({
               fr: "v5 Elegant Elephant",
               en: "v5 Elegant Elephant"
             })}
@@ -196,7 +242,7 @@ export default function(props) {
               fr: v5_desc_fr,
               en: v5_desc_en
             })}
-            isCurrent={true}
+            isCurrent={false}
             />
             <LogCell
             version={pick({

@@ -66,6 +66,39 @@ const settings = {
   prevArrow: <SamplePrevArrow />,
 };
 
+const v7_desc_fr = (
+  <span>
+    Toujours plus vite, toujours plus loin, toujours plus pratique ! Archifiltre s'offre une mise à jour sur le pouce, centrée sur une chose et une 
+    seule : <b>votre confort</b> !<br /><br />
+    Le plus important avant tout : <b>l'application devrait désormais remplir élégamment la fenêtre de votre navigateur</b>, <em>quelle que soit sa 
+    taille</em> ! Plus de stalactites qui dépassent en bas, plus de réglette de taille invisible, plus de tags qui font déborder le tableau de bord ... Un 
+    vrai bonheur, non ?<br /><br />
+    Les goûts, les couleurs, ce n'est pas toujours évident, mais vos messages ont été clairs : les <b>couleurs par type de fichier</b>, c'était plutôt 
+    mieux  Du coup, elles font leur grand retour. D'ailleurs, pour que la barre de navigation soit plus claire, on a renommé le réglage en "code couleur", et 
+    celui-ci en particulier en "Type" plutôt que "Volume". Quant à l'autre code couleur, celui par dates, il arbore un nouveau dégradé, qui devrait être 
+    plus lisible et vous aider à identifier les fichiers tout vieux comme tout jeunes !<br /><br />
+    Et parce que le Diable est dans les détails, on s'est penchés sur deux d'entre eux qui vous rendaient la saisie pénible. <b>Plus besoin d'appuyer sur 
+    Entrée pour valider un tag</b> que vous venez de taper : dès que vous cliquez hors du cadre de tags, il est validé. Et <b>plus besoin de cliquer pile sur 
+    le texte des commentaires pour l'éditer</b> : tout le cadre des commentaires réagit désormais !<br /><br />
+    D'autres améliorations arrivent, beaucoup plus conséquentes : on vous tient au courant !
+  </span>
+);
+
+const v7_desc_en = (
+  <span>
+    Better, Faster, Friendlier! Here comes a quick update, focused on one thing only: <b>your comfort</b>!<br /><br />
+    First thing's first: <b>the app should now neatly fit your browser window</b>, <em>no matter its size</em>! No more icicles pouring out  
+    the window, no more invisible ruler, no more tags overflowing the report card... Nice, right?<br /><br />
+    Colour yourselves heard: you told us you missed the <b>colours by file type</b>, so we put them back in. By the way, the navigation bar now labels this 
+    as "colour codes", with this one in particular being "type", not "volume" - which makes more sense. The other colour code - "Date" - sports a 
+    new gradient: it should be easier to read whenever you're after files old and new!<br /><br />
+    Because the Devil is in the detail, we delved into two of those which made editing harder. Now <b>there's no need to press Enter 
+    to validate a tag</b> you just typed in: as soon as you click out of the tag area, it's added in. And <b>there's no need to click right on 
+    the comments' text to edit it</b>: the entire comment area will now do!<br /><br />
+    There are other, more consequential updates coming your way: we'll keep you posted!
+  </span>
+);
+
 const v6_desc_fr = (
   <span>
     Une nouvelle version, une nouvelle ribambelle d'améliorations !<br /><br />
@@ -216,6 +249,21 @@ export default function(props) {
           <Slider {...settings}>
             <LogCell
             version={pick({
+              fr: "v7 Gentle Gorilla",
+              en: "v7 Gentle Gorilla"
+            })}
+            date={pick({
+              fr: "20 juin 2018",
+              en: "June 20 2018"
+            })}
+            content={pick({
+              fr: v7_desc_fr,
+              en: v7_desc_en
+            })}
+            isCurrent={true}
+            />
+            <LogCell
+            version={pick({
               fr: "v6 Frolic Fox",
               en: "v6 Frolic Fox"
             })}
@@ -227,7 +275,7 @@ export default function(props) {
               fr: v6_desc_fr,
               en: v6_desc_en
             })}
-            isCurrent={true}
+            isCurrent={false}
             />
             <LogCell
             version={pick({

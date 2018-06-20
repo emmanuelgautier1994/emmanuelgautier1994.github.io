@@ -23,7 +23,7 @@ export default function(props) {
   return (
     <div className='grid-x'>
       <div className='cell'>
-          <button style={button_style} onClick={() => window.location = 'https://archifiltre.io'}>
+          <button style={button_style} onClick={() => window.location = 'https://archifiltre.github.io'}>
             {button_text}
           </button>
       </div>

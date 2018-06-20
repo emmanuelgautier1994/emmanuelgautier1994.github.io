@@ -22,8 +22,8 @@ const cta_style = t_a_center.add({
 }).style()
 
 const version_text = pick({
-  fr:<span>version Elegant Elephant</span>,
-  en:<span>version Elegant Elephant</span>
+  fr:<span>version 7 Gentle Gorilla</span>,
+  en:<span>version 7 Gentle Gorilla</span>
 })
 
 const changelog_text = pick({
